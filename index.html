@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharan Swaminathan | Portfolio</title>
+    <meta name="description" content="Professional portfolio for Sharan Swaminathan, a full stack developer focused on web development and publishing workflows." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <a class="brand" href="#hero">
+          <span class="brand-badge">S</span>
+          <span id="siteName">Sharan</span>
+        </a>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a id="resumeLink" href="https://drive.google.com/file/d/1tsARhW7cbp2tkJAXk7xYvSWfJNKQdR3T/view?usp=drive_link">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="container hero">
+        <div class="card hero-card">
+          <span class="eyebrow">Available for opportunities</span>
+          <h1>Crafting digital experiences with clarity and purpose.</h1>
+          <p class="lead" id="heroSummary"></p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            <a class="btn btn-secondary" href="https://drive.google.com/file/d/1tsARhW7cbp2tkJAXk7xYvSWfJNKQdR3T/view?usp=drive_link" target="_blank" rel="noreferrer">View Resume</a>
+          </div>
+          <div class="socials">
+            <a id="githubLink" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a id="linkedinLink" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a id="leetcodeLink" href="#" target="_blank" rel="noreferrer">LeetCode</a>
+            <a href="mailto:sharans05122003@gmail.com">Email</a>
+          </div>
+          <div class="badge-row" style="margin-top: 1rem;">
+            <span class="pill" id="heroLocation"></span>
+            <span class="pill" id="heroEmail"></span>
+            <span class="pill" id="heroMobile"></span>
+          </div>
+        </div>
+        <div class="card hero-visual">
+          <img id="heroAvatar" src="profile.jpg" alt="Sharan Swaminathan" />
+          <div class="badge-row">
+            <span class="pill" id="heroName"></span>
+            <span class="pill" id="heroRole"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>A technical professional blending structured content workflows with modern web development.</p>
+        </div>
+        <div class="grid-2">
+          <article class="about-card card">
+            <p id="aboutText"></p>
+          </article>
+          <article class="about-card card">
+            <h3>Core Skills</h3>
+            <div id="skillList" class="skill-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="container">
+        <div class="section-title">
+          <h2>Experience</h2>
+          <p>Professional timeline and key responsibilities.</p>
+        </div>
+        <div id="experienceList" class="timeline"></div>
+      </section>
+
+      <section id="projects" class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>Selected work demonstrating problem-solving, product thinking, and implementation quality.</p>
+        </div>
+        <div id="projectList" class="grid-3"></div>
+      </section>
+
+      <section id="certifications" class="container">
+        <div class="section-title">
+          <h2>Certifications</h2>
+          <p>Academic and professional credentials supporting my technical foundation.</p>
+        </div>
+        <div id="certList" class="grid-3"></div>
+      </section>
+
+      <section id="contact" class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Reach out for collaboration, opportunities, or feedback.</p>
+        </div>
+        <div class="grid-2">
+          <article class="contact-card card">
+            <form id="contactForm">
+              <div class="form-grid">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="you@example.com" />
+                </div>
+              </div>
+              <div style="margin-top: 1rem;">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about your idea..."></textarea>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send Message</button>
+              </div>
+              <p class="status" id="formStatus"></p>
+            </form>
+          </article>
+          <article class="contact-card card">
+            <h3>Direct Contact</h3>
+            <div class="contact-list">
+              <div>📍 <span id="heroLocation2"></span></div>
+              <div>✉️ <span id="heroEmail2"></span></div>
+              <div>📱 <span id="heroMobile2"></span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p>© <span id="year"></span> Sharan Swaminathan. Built with plain HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
